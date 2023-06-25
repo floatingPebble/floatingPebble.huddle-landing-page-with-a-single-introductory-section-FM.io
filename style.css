@@ -30,6 +30,10 @@ body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    background: url(images/bg-mobile.svg) left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--VIOLET);
 }
 
 /*
@@ -78,7 +82,143 @@ h6 {
 :root {
     --VIOLET: hsl(257, 40%, 49%);
     --SOFT-MAGENTA: hsl(300, 69%, 71%);
+    --SHADOW-COLOR: hsla(0, 0%, 0%, 0.25);
 
     --HEADINGS-FONT: 'Poppins', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.main-container {
+    padding: 2rem 2.2rem 2.5rem 2.25rem;
+    text-align: center;
+}
+
+.logo {
+    width: 38%;
+    height: auto;
+    margin-bottom: 3.8rem;
+}
+
+.illustration {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3.8rem;
+}
+
+.tagline {
+    font-size: 1.45rem;
+    font-family: var(--HEADINGS-FONT);
+    margin-bottom: 0.9rem;
+}
+
+.details {
+    margin-bottom: 1.55rem;
+}
+
+.register-btn {
+    color: var(--VIOLET);
+    background-color: white;
+    padding: 0.62rem 4.8rem;
+    border: none;
+    border-radius: 20rem;
+    font-size: 0.76rem;
+    font-family: var(--HEADINGS-FONT);
+    box-shadow: 0 0.12rem 0.25rem 0.1rem var(--SHADOW-COLOR);
+    margin-bottom: 4rem;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.register-btn:hover {
+    background-color: var(--SOFT-MAGENTA);
+    color: white;
+    transition: background-color 0.1s, color 0.1s;
+    cursor: pointer;
+}
+
+.icon-wrapper {
+    border: 1px solid white;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    transition: border-color 0.1s, color 0.1s;
+}
+
+.icon-wrapper:hover {
+    border-color: var(--SOFT-MAGENTA);
+    color: var(--SOFT-MAGENTA);
+    transition: border-color 0.1s, color 0.1s;
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials>* {
+    margin-inline: 0.35rem;
+}
+
+@media screen and (min-width: 901px) {
+    body {
+        background: url(images/bg-desktop.svg) left top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--VIOLET);
+    }
+
+    .main-container {
+        display: flex;
+        padding: 0 5% 0 5%;
+    }
+
+    .top-part {
+        width: 59%;
+        padding-right: 3.6rem;
+    }
+
+    .illustration {
+        margin-bottom: 0;
+    }
+
+    .logo {
+        width: 27%;
+        margin-block: 2.4rem 4.2rem;
+    }
+
+    .bottom-part {
+        width: 41%;
+        text-align: left;
+        padding-top: 11.75rem;
+        position: relative;
+    }
+
+    .socials {
+        position: absolute;
+        right: 0;
+        bottom: 4%;
+    }
+
+    .tagline {
+        font-size: 2.3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .details {
+        font-size: 1.07rem;
+        line-height: 1.75rem;
+    }
+
+    .register-btn {
+        padding: 0.94rem 4.1rem;
+        margin-bottom: 35%;
+        font-size: 1.1rem;
+        box-shadow: 0 0.12rem 0.55rem 0.3rem var(--SHADOW-COLOR);
+    }
 }
