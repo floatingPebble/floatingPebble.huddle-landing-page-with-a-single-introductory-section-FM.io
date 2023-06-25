@@ -189,13 +189,13 @@ h6 {
 
     .logo {
         width: 27%;
-        margin-block: 2.4rem 4.2rem;
+        margin-block: 3.2rem 4.5rem;
     }
 
     .bottom-part {
         width: 41%;
         text-align: left;
-        padding-top: 11.75rem;
+        padding-top: 13.5rem;
         position: relative;
     }
 
@@ -217,8 +217,18 @@ h6 {
 
     .register-btn {
         padding: 0.94rem 4.1rem;
-        margin-bottom: 35%;
+        margin-bottom: 40%;
         font-size: 1.1rem;
         box-shadow: 0 0.12rem 0.55rem 0.3rem var(--SHADOW-COLOR);
+    }
+
+    .icon-wrapper {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    .socials>* {
+        margin-inline: 0.5rem;
     }
 }
